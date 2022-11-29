@@ -1,10 +1,8 @@
 let anagram = (a,b) =>{
     if(a.length !== b.length) return false;
-    
+
     a = a.split("");
     b = b.split("");
-    a.sort();
-    b.sort();
-    return a.join("") === b.join("");
+    return a.sort().join("") === b.sort().join("");
 }
 console.log(anagram("heart", "earth"));
